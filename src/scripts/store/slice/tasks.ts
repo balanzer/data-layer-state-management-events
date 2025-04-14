@@ -11,7 +11,7 @@ interface Task {
   completed: boolean;
 }
 
-let id: number = 0;
+let id: number = 1000;
 
 const logger = new Logger("tasks-slice");
 
