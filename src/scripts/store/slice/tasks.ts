@@ -1,10 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Logger } from "../../logger/log";
 
-interface CounterState {
-  value: number;
-}
-
 interface Task {
   id: number;
   task: string;

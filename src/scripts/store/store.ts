@@ -1,13 +1,19 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { Logger } from "../logger/log";
 import taskReducer from "./slice/tasks";
+import {
+  devToolsEnhancer,
+  composeWithDevTools,
+} from "redux-devtools-extension";
 
 const logger = new Logger("store");
+
 const store = configureStore({
   reducer: {
     action: null,
     tasks: taskReducer,
   },
+  devTools: true,
 });
 
 function handleChange() {
