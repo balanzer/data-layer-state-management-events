@@ -1,3 +1,11 @@
+### Digital Data Layer
+
+https://www.w3.org/2013/12/ceddl-201312.pdf
+
+### Adobe Client Data Layer
+
+https://github.com/adobe/adobe-client-data-layer/wiki
+
 ## Clean install project
 
 npm ci
