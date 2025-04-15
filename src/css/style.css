@@ -8,7 +8,7 @@ body {
 }
 
 .scrollable-element-data {
-  height: 800px;
+  height: 600px;
   overflow: auto;
 }
 

@@ -3,6 +3,7 @@ import { AppTasks } from "./app-flow/app-task";
 import { ClickListners } from "./listners/click-listners";
 import { AppLogEvents } from "./data/events/app-events";
 
+
 const logger = new Logger("main-app");
 
 //INIT Todo tasks app
