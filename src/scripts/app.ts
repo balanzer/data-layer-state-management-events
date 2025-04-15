@@ -1,6 +1,6 @@
 import { Logger } from "./logger/log";
 import { AppTasks } from "./app-flow/app-task";
-
+import { ClickListners } from "./listners/click-listners";
 const logger = new Logger("main-app");
 
 //INIT Todo tasks app
@@ -25,3 +25,11 @@ appTasks.addTask("Plan PTO", "some dummy desc");
 
 appTasks.markComplete(1003);
 appTasks.markComplete(1004);
+
+const clickListners: ClickListners = new ClickListners();
+// method is accessible globally
+(window as any).handleListnerTaskComplete =
+  clickListners.handleListnerTaskComplete.bind(clickListners);
+
+(window as any).handleListnerTaskRemove =
+  clickListners.handleListnerTaskRemove.bind(clickListners);
