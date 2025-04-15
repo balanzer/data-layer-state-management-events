@@ -15,7 +15,76 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
-          <h3>Todo</h3>
+          <h3>Todo tasks</h3>
+
+          <div class="mb-3">
+            <label
+              for="taskNameInput"
+              class="form-label"
+              >Task Name</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="taskNameInput"
+              placeholder="Task name"
+            />
+            <div class="col-auto">
+              <span
+                id="taskNameInputHelpInline"
+                class="form-text"
+              >
+                Must be 8-30 characters long.
+              </span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label
+              for="taskDescInput"
+              class="form-label"
+              >Task Details</label
+            >
+            <textarea
+              class="form-control"
+              id="taskDescInput"
+              rows="3"
+              placeholder="Task details"
+            ></textarea>
+            <div class="col-auto">
+              <span
+                id="taskNameInputHelpInline"
+                class="form-text"
+              >
+                Must be 10-300 characters long.
+              </span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div
+              class="alert alert-danger"
+              role="alert"
+              id="tasks-validation-errors"
+              style="display: none"
+            ></div>
+
+            <div
+              class="alert alert-primary"
+              role="alert"
+              id="tasks-added-info"
+              style="display: none"
+            >
+              New task added.
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="add-new-task-btn"
+            >
+              Add Task
+            </button>
+          </div>
         </div>
         <div class="col-6">
           <div class="row app-padding">
