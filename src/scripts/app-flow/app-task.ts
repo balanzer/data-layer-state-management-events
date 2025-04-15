@@ -126,7 +126,7 @@ export class AppTasks {
                 </button>
                 <button
                   class="btn btn-success app-complete-task"
-                  type="button"
+                  type="button">
                   Mark complete
                 </button>
               </div>
