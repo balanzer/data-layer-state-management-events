@@ -5,24 +5,77 @@ import store from "../store/store";
 //global to handle logs within click events
 const logger = new Logger("app-tasks");
 
+const common_taks = [
+  {
+    taskName: "Deep Cleaning",
+    taskDesc:
+      "Cleaning inside and outside of kitchen cabinets, scrubbing out the fridge, etc.",
+  },
+  {
+    taskName: "Household",
+    taskDesc: "Making the bed, cleaning dishes, laundry, tidying up.",
+  },
+  {
+    taskName: "Today Evening",
+    taskDesc: "Prepare and eat dinner, do dishes, read, journal.",
+  },
+  {
+    taskName: "Today Errands",
+    taskDesc: "Grocery shopping, picking up dry cleaning.",
+  },
+  {
+    taskName: "Physical Activity",
+    taskDesc: "Exercise, stretching, yoga.",
+  },
+  {
+    taskName: "Meal Preparation",
+    taskDesc: "Having breakfast, lunch, and dinner.",
+  },
+  {
+    taskName: "Self-Care",
+    taskDesc: "Reading, journaling, meditation. ",
+  },
+  {
+    taskName: "Visit Parks",
+    taskDesc: "Visit parks, splash pads, and nature centers.",
+  },
+  {
+    taskName: "Night Camping",
+    taskDesc: "Camp in the backyard.",
+  },
+  {
+    taskName: "todo events",
+    taskDesc: "Participate in church, community, and library events.",
+  },
+  {
+    taskName: "ice cream",
+    taskDesc: "Take a bike ride to get ice cream.",
+  },
+  {
+    taskName: "Hydration",
+    taskDesc: "Drinking water throughout the day.",
+  },
+];
+
 export class AppTasks {
   constructor() {
     logger.info("init todo-app");
     this.addListners();
   }
 
+  getRandomTask() {
+    const index = Math.floor(Math.random() * common_taks.length);
+    return common_taks[index];
+  }
+
   addListners() {}
   addDummyTasks() {
-    //run once when init app
-    store.dispatch(
-      addTask({
-        taskName: "Household chores,",
-        taskDesc: "Complete household chores",
-      })
-    );
-    store.dispatch(
-      addTask({ taskName: "Pay bills", taskDesc: "Pay all outstanding bills" })
-    );
+    // run once
+    //add some tasks
+    const task1 = this.getRandomTask();
+    const task2 = this.getRandomTask();
+    this.addTask(task1.taskName, task1.taskDesc);
+    this.addTask(task2.taskName, task2.taskDesc);
   }
   addTask(taskName: string, taskDesc: string) {
     //logger.info("add new task ", taskName, ", ", taskDesc);
@@ -85,16 +138,12 @@ export class AppTasks {
     const taskApp: AppTasks = new AppTasks();
 
     taskApp.addTask(inputTaskNameValue, inputTaskDescValue);
-
-    (document.getElementById("taskNameInput") as any).value = "";
-    (document.getElementById("taskDescInput") as any).value = "";
+    const task1 = taskApp.getRandomTask();
+    (document.getElementById("taskNameInput") as any).value = task1.taskName;
+    (document.getElementById("taskDescInput") as any).value = task1.taskDesc;
     //process new task
     (document.getElementById("tasks-added-info") as any).style.display =
       "block";
-  }
-
-  handleClickComplete() {
-    logger.info("handleClickComplete");
   }
 
   handleTasksChange() {
