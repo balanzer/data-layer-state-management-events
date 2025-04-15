@@ -23,9 +23,11 @@ function handleChange() {
     //logger.info("current state : ", currentValue);
 
     var jsonPrint = JSON.stringify(currentValue, undefined, 4);
-    //logger.info("current state : ", jsonPrint);
+    logger.info("data : ", currentValue);
 
     //update UI
+
+    //text area
     (document.getElementById("data-state-text") as any).value = jsonPrint;
   }
 }
