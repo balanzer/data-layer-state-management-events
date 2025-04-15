@@ -1,5 +1,5 @@
 import { Logger } from "../logger/log";
-import { addTask } from "../store/slice/tasks";
+import { addTask, completedTask, removeTask } from "../store/slice/tasks";
 import store from "../store/store";
 
 //global to handle logs within click events
@@ -23,8 +23,18 @@ export class AppTasks {
     );
   }
   addTask(taskName: string, taskDesc: string) {
-    logger.info("add new task ", taskName, ", ", taskDesc);
+    //logger.info("add new task ", taskName, ", ", taskDesc);
     store.dispatch(addTask({ taskName: taskName, taskDesc: taskDesc }));
+  }
+
+  removeTask(taskID: number) {
+    logger.info("remove task with id ", taskID);
+    store.dispatch(removeTask({ id: taskID }));
+  }
+
+  markComplete(taskID: number) {
+    logger.info("mark task with id ", taskID, " as complete");
+    store.dispatch(completedTask({ id: taskID }));
   }
 
   handleAddTasks() {

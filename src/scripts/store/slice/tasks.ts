@@ -23,19 +23,27 @@ const taskSlice = createSlice({
         taskName: action.payload.taskName,
         taskDesc: action.payload.taskDesc,
         completed: false,
+        deleted: false,
       });
     },
     removeTask: (state, action) => {
       const index = state.findIndex(
         (task: Task) => task.id === action.payload.id
       );
-      state.splice(index, 1);
+
+      if (index !== -1) {
+        state.splice(index, 1);
+      }
     },
     completedTask: (state, action) => {
-      const index = state.findIndex((task: Task) => {
-        task.id === action.payload.id;
-        task.completed === true;
-      });
+      const index = state.findIndex(
+        (task: Task) => task.id === action.payload.id
+      );
+
+      //logger.info("completedTask index : ", index);
+      if (index !== -1) {
+        state[index].completed = true;
+      }
     },
   },
 });
