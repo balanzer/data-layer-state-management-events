@@ -7,7 +7,7 @@ export class AppDataLayer {
     this.logger.info("init dl");
     this.digitalData = (window as any).digitalData || [];
   }
-
+  /*
   getData() {
     // Pageview event
     this.digitalData.push({
@@ -31,5 +31,5 @@ export class AppDataLayer {
     var jsonPrint = JSON.stringify(data, undefined, 4);
     this.logger.info("set data : ", jsonPrint);
     (document.getElementById("data-state-text") as any).value = jsonPrint;
-  }
+  } */
 }

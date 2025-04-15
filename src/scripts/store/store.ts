@@ -23,7 +23,7 @@ function handleChange() {
     //logger.info("current state : ", currentValue);
 
     var jsonPrint = JSON.stringify(currentValue, undefined, 4);
-    logger.info("data : ", currentValue);
+    logger.info("current data : ", currentValue);
 
     //update UI
 
