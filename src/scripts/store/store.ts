@@ -5,6 +5,7 @@ import {
   devToolsEnhancer,
   composeWithDevTools,
 } from "redux-devtools-extension";
+import { DataAppEvents } from "../data/events/data-events";
 
 const logger = new Logger("store");
 
@@ -34,5 +35,5 @@ function handleChange() {
 
 const unsubscribe = store.subscribe(handleChange);
 //handle unsubscribe if reqd
-
+DataAppEvents.addDataEvent("data:init");
 export default store;

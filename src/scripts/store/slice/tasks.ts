@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Logger } from "../../logger/log";
-
+import { DataAppEvents } from "../../data/events/data-events";
 interface Task {
   id: number;
   taskName: string;
@@ -24,6 +24,7 @@ const taskSlice = createSlice({
         taskDesc: action.payload.taskDesc,
         completed: false,
       });
+      DataAppEvents.addDataEvent("data:task:new");
     },
     removeTask: (state, action) => {
       const index = state.findIndex(
@@ -32,6 +33,7 @@ const taskSlice = createSlice({
 
       if (index !== -1) {
         state.splice(index, 1);
+        DataAppEvents.addDataEvent("data:task:delete");
       }
     },
     completedTask: (state, action) => {
@@ -42,6 +44,7 @@ const taskSlice = createSlice({
       //logger.info("completedTask index : ", index);
       if (index !== -1) {
         state[index].completed = true;
+        DataAppEvents.addDataEvent("data:task:update");
       }
     },
   },

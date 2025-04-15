@@ -1,3 +1,4 @@
+import { AppLogEvents } from "../data/events/app-events";
 import { Logger } from "../logger/log";
 import { addTask, completedTask, removeTask } from "../store/slice/tasks";
 import store from "../store/store";
@@ -80,16 +81,19 @@ export class AppTasks {
   addTask(taskName: string, taskDesc: string) {
     //logger.info("add new task ", taskName, ", ", taskDesc);
     store.dispatch(addTask({ taskName: taskName, taskDesc: taskDesc }));
+    AppLogEvents.addAppLogEvent("task - new");
   }
 
   removeTask(taskID: number) {
     // logger.info("remove task with id ", taskID);
     store.dispatch(removeTask({ id: taskID }));
+    AppLogEvents.addAppLogEvent("task - delete");
   }
 
   markComplete(taskID: number) {
     //logger.info("mark task with id ", taskID, " as complete");
     store.dispatch(completedTask({ id: taskID }));
+    AppLogEvents.addAppLogEvent("task - complete");
   }
 
   handleAddTasks() {
