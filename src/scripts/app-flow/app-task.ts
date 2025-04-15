@@ -1,4 +1,6 @@
 import { Logger } from "../logger/log";
+import { addTask } from "../store/slice/tasks";
+import store from "../store/store";
 
 //global to handle logs within click events
 const logger = new Logger("app-tasks");
@@ -6,7 +8,23 @@ const logger = new Logger("app-tasks");
 export class AppTasks {
   constructor() {
     logger.info("init todo-app");
-    this.setupListners();
+  }
+
+  addDummyTasks() {
+    //run once when init app
+    store.dispatch(
+      addTask({
+        taskName: "Household chores,",
+        taskDesc: "Complete household chores",
+      })
+    );
+    store.dispatch(
+      addTask({ taskName: "Pay bills", taskDesc: "Pay all outstanding bills" })
+    );
+  }
+  addTask(taskName: string, taskDesc: string) {
+    logger.info("add new task ", taskName, ", ", taskDesc);
+    store.dispatch(addTask({ taskName: taskName, taskDesc: taskDesc }));
   }
 
   handleAddTasks() {
@@ -52,7 +70,9 @@ export class AppTasks {
     (document.getElementById("tasks-validation-errors") as any).style.display =
       "none";
 
-    logger.info("add task ", inputTaskNameValue, ", ", inputTaskDescValue);
+    const taskApp: AppTasks = new AppTasks();
+
+    taskApp.addTask(inputTaskNameValue, inputTaskDescValue);
 
     (document.getElementById("taskNameInput") as any).value = "";
     (document.getElementById("taskDescInput") as any).value = "";
@@ -62,6 +82,7 @@ export class AppTasks {
   }
 
   setupListners() {
+    //run once when init app
     logger.info("add listner for add task button");
 
     const element: any = document.querySelector("#add-new-task-btn");

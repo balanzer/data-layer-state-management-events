@@ -3,7 +3,8 @@ import { Logger } from "../../logger/log";
 
 interface Task {
   id: number;
-  task: string;
+  taskName: string;
+  taskDesc: string;
   completed: boolean;
 }
 
@@ -19,7 +20,8 @@ const taskSlice = createSlice({
     addTask: (state: any, action) => {
       state.push({
         id: id++,
-        task: action.payload.task,
+        taskName: action.payload.taskName,
+        taskDesc: action.payload.taskDesc,
         completed: false,
       });
     },
