@@ -23,7 +23,6 @@ const taskSlice = createSlice({
         taskName: action.payload.taskName,
         taskDesc: action.payload.taskDesc,
         completed: false,
-        deleted: false,
       });
     },
     removeTask: (state, action) => {

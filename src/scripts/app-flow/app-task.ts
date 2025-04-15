@@ -8,8 +8,10 @@ const logger = new Logger("app-tasks");
 export class AppTasks {
   constructor() {
     logger.info("init todo-app");
+    this.addListners();
   }
 
+  addListners() {}
   addDummyTasks() {
     //run once when init app
     store.dispatch(
@@ -28,12 +30,12 @@ export class AppTasks {
   }
 
   removeTask(taskID: number) {
-    logger.info("remove task with id ", taskID);
+    // logger.info("remove task with id ", taskID);
     store.dispatch(removeTask({ id: taskID }));
   }
 
   markComplete(taskID: number) {
-    logger.info("mark task with id ", taskID, " as complete");
+    //logger.info("mark task with id ", taskID, " as complete");
     store.dispatch(completedTask({ id: taskID }));
   }
 
@@ -91,6 +93,71 @@ export class AppTasks {
       "block";
   }
 
+  handleClickComplete() {
+    logger.info("handleClickComplete");
+  }
+
+  handleTasksChange() {
+    const tasks = store.getState().tasks;
+    //logger.info("tasks:", tasks);
+
+    const parentElement = document.getElementById("app-task-details");
+
+    if (!!parentElement) {
+      parentElement.innerHTML = "";
+      for (const task of tasks) {
+        const newChildElement = document.createElement("div");
+        newChildElement.dataset.task_id = task.id;
+        var templateContent = `
+        
+         <div class="list-group">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">${task.taskName}</h5>
+                <small>${task.id}</small>
+              </div>
+            
+              <p class="mb-1">${task.taskDesc}</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button
+                  class="btn btn-danger me-md-2 app-delete-task"
+                  type="button" 
+                >
+                  Delete task
+                </button>
+                <button
+                  class="btn btn-success app-complete-task"
+                  type="button"
+                  Mark complete
+                </button>
+              </div>
+              <hr>
+            </div> 
+        
+        `;
+
+        if (task.completed === true) {
+          templateContent = `
+        
+         <div class="list-group">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><strike>${task.taskName}</strike></h5>
+                <small>${task.id}</small>
+              </div>
+            
+              <p class="mb-1"><strike>${task.taskDesc}</strike></p>
+       
+              <hr>
+            </div> 
+        
+        `;
+        }
+
+        newChildElement.innerHTML = templateContent;
+        parentElement.appendChild(newChildElement);
+      }
+    }
+  }
+
   setupListners() {
     //run once when init app
     logger.info("add listner for add task button");
@@ -100,5 +167,8 @@ export class AppTasks {
     if (!!element) {
       element.addEventListener("click", this.handleAddTasks);
     }
+
+    const unsubscribe = store.subscribe(this.handleTasksChange);
+    //handle unsubscribe if reqd
   }
 }
