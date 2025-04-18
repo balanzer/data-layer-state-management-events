@@ -60,7 +60,6 @@ const common_taks = [
 
 export class AppTasks {
   constructor() {
-    logger.info("init todo-app");
     this.addListners();
   }
 
@@ -81,19 +80,19 @@ export class AppTasks {
   addTask(taskName: string, taskDesc: string) {
     //logger.info("add new task ", taskName, ", ", taskDesc);
     store.dispatch(addTask({ taskName: taskName, taskDesc: taskDesc }));
-    AppLogEvents.addAppLogEvent("task - new");
+    //AppLogEvents.addAppLogEvent("task - new");
   }
 
   removeTask(taskID: number) {
     // logger.info("remove task with id ", taskID);
     store.dispatch(removeTask({ id: taskID }));
-    AppLogEvents.addAppLogEvent("task - delete");
+    //AppLogEvents.addAppLogEvent("task - delete");
   }
 
   markComplete(taskID: number) {
     //logger.info("mark task with id ", taskID, " as complete");
     store.dispatch(completedTask({ id: taskID }));
-    AppLogEvents.addAppLogEvent("task - complete");
+    //AppLogEvents.addAppLogEvent("task - complete");
   }
 
   handleAddTasks() {

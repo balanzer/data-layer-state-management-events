@@ -1,20 +1,24 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { Logger } from "../logger/log";
 import taskReducer from "./slice/tasks";
-import {
-  devToolsEnhancer,
-  composeWithDevTools,
-} from "redux-devtools-extension";
+
 import { DataAppEvents } from "../data/events/data-events";
 
+import { LogActions } from "./middleware/logActions";
+import { logger as redux_mw_logger } from "redux-logger";
+
 const logger = new Logger("store");
+const logActions = new LogActions();
 
 const store = configureStore({
   reducer: {
-    action: null,
     tasks: taskReducer,
   },
   devTools: true,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat([logActions.log, redux_mw_logger]),
 });
 
 function handleChange() {

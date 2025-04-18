@@ -19,4 +19,4 @@ const clickListners: ClickListners = new ClickListners();
   clickListners.handleListnerTaskRemove.bind(clickListners);
 
 //log app event
-AppLogEvents.addAppLogEvent("App ready");
+//AppLogEvents.addAppLogEvent("App ready");
