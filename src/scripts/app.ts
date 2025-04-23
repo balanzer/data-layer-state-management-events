@@ -8,7 +8,9 @@ const logger = new Logger("main-app");
 //INIT Todo tasks app
 const appTasks: AppTasks = new AppTasks();
 appTasks.setupListners();
+//if (location.pathname.includes("/todo.html")) {
 appTasks.addDummyTasks();
+//}
 
 const clickListners: ClickListners = new ClickListners();
 // method is accessible globally
@@ -19,4 +21,5 @@ const clickListners: ClickListners = new ClickListners();
   clickListners.handleListnerTaskRemove.bind(clickListners);
 
 //log app event
-//AppLogEvents.addAppLogEvent("App ready");
+
+AppLogEvents.addAppLogEvent("Page ready");
