@@ -1,17 +1,19 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { Logger } from "../logger/log";
 import taskReducer from "./slice/tasks";
-
+import pageReducer from "./slice/pageSlice";
 import { DataAppEvents } from "../data/events/data-events";
 
 import { LogActions } from "./middleware/logActions";
 import { logger as redux_mw_logger } from "redux-logger";
+
 
 const logger = new Logger("store");
 const logActions = new LogActions();
 
 const store = configureStore({
   reducer: {
+    page: pageReducer,
     tasks: taskReducer,
   },
   devTools: true,

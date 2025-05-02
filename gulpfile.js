@@ -60,6 +60,14 @@ gulp.task("browser-sync", function () {
   gulp.watch("./src/**/*.ts", gulp.series(["build"])).on("change", reload);
 });
 
+gulp.task("start-browser-sync", function () {
+  browserSync.init({
+    server: {
+      baseDir: "./dist",
+    },
+  });
+});
+
 gulp.task("build", gulp.series("clean-scripts", "js-build", "inject-in-html"));
 
 gulp.task("default", gulp.series("build", "browser-sync"));

@@ -2,6 +2,10 @@ import { Logger } from "./logger/log";
 import { AppTasks } from "./app-flow/app-task";
 import { ClickListners } from "./listners/click-listners";
 import { AppLogEvents } from "./data/events/app-events";
+import { Page } from "./data/models/Page";
+
+import store from "./store/store";
+import { createPage, updatePage } from "./store/slice/pageSlice";
 
 const logger = new Logger("main-app");
 
@@ -23,3 +27,15 @@ const clickListners: ClickListners = new ClickListners();
 //log app event
 
 AppLogEvents.addAppLogEvent("Page ready");
+
+// test
+
+const page = new Page();
+
+logger.log("Page : ", page);
+
+store.dispatch(createPage({}));
+logger.log("Page created : ", store.getState());
+
+store.dispatch(updatePage({}));
+logger.log("Page Updated : ", store.getState());

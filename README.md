@@ -18,6 +18,12 @@ npm install
 
 run `gulp` - default build and starts browser at http://localhost:3000/
 
+### Other build options
+
+`gulp build` - clean and do build
+
+`gulp start-browser-sync` - clean and do build
+
 ## Mirage
 
 Mirage is a JavaScript library that lets frontend developers mock out backend APIs.
