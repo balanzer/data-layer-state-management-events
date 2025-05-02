@@ -7,6 +7,11 @@ export class DataAppEvents {
     return this.data_events;
   }
   static addDataEvent(eventName) {
+    setTimeout(() => {
+      this.handleDataEvent(eventName);
+    }, 300);
+  }
+  static handleDataEvent(eventName) {
     this.data_events.push(eventName);
     this.logger.info("data events : ", this.data_events);
     //update UI with latest data

@@ -5,7 +5,7 @@ import { AppLogEvents } from "./data/events/app-events";
 import { Page } from "./data/models/Page";
 
 import store from "./store/store";
-import { createPage, updatePage } from "./store/slice/pageSlice";
+import { updatePage } from "./store/slice/pageSlice";
 
 const logger = new Logger("main-app");
 
@@ -31,11 +31,8 @@ AppLogEvents.addAppLogEvent("Page ready");
 // test
 
 const page = new Page();
+page.setPageName("test");
+page.setPageCategory("test Category");
 
-logger.log("Page : ", page);
-
-store.dispatch(createPage({}));
-logger.log("Page created : ", store.getState());
-
-store.dispatch(updatePage({}));
+store.dispatch(updatePage(page));
 logger.log("Page Updated : ", store.getState());
