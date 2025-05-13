@@ -1,12 +1,44 @@
 sign-in / logout 
 change country language 
-exit links 
-social media exit links 
-
-add 
-appevents slice
 
 
-data 
 
-test
+Home
+load trackingJson 
+custom events 
+Reload Home 
+Miami Hotels 
+
+
+
+Search 
+load trackingJson
+save API calls 
+custom events 
+Apply Amenities & brand filter 
+Sort results by Rating 
+Change Money to Points
+
+Change Currency from USD to GBP 
+Update rate preference from best available to AAA/CAA Rate 
+
+
+Hotel Details - Holiday Inn Port Of Miami-Downtown
+Select Hotel - Holiday Inn Port Of Miami-Downtown
+
+
+Hotel Details 
+load trackingJson
+save API calls 
+custom events 
+
+Select Hotel - Holiday Inn Port Of Miami-Downtown
+
+Rates 
+
+load trackingJson
+save API calls 
+custom events 
+Apply filters Bed type, Amenities 
+
+switch Money to Points 
