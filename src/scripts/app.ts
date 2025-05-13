@@ -17,12 +17,21 @@ appTasks.addDummyTasks();
 //}
 
 const clickListners: ClickListners = new ClickListners();
+
+
 // method is accessible globally
 (window as any).handleListnerTaskComplete =
   clickListners.handleListnerTaskComplete.bind(clickListners);
 
 (window as any).handleListnerTaskRemove =
   clickListners.handleListnerTaskRemove.bind(clickListners);
+
+  (window as any).handleSignIn =
+  clickListners.handleSignIn.bind(clickListners);
+
+  (window as any).handleSignOut =
+  clickListners.handleSignOut.bind(clickListners);
+
 
 //log app event
 

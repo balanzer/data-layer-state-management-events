@@ -20,7 +20,7 @@ run `gulp` - default build and starts browser at http://localhost:3000/
 
 ### Other build options
 
-`gulp build` - clean and do build
+`gulp build` - clean and do build - if build fails it may be due to /dist/ folder missing, create /dist/ in root folder
 
 `gulp start-browser-sync` - clean and do build
 
