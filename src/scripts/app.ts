@@ -4,6 +4,7 @@ import { ClickListners } from "./listners/click-listners";
 import { AppLogEvents } from "./data/events/app-events";
 import { Page } from "./data/models/Page";
 
+import { GenerateData } from "./data/generate-data";
 import store from "./store/store";
 import { updatePage } from "./store/slice/pageSlice";
 
@@ -18,7 +19,6 @@ appTasks.addDummyTasks();
 
 const clickListners: ClickListners = new ClickListners();
 
-
 // method is accessible globally
 (window as any).handleListnerTaskComplete =
   clickListners.handleListnerTaskComplete.bind(clickListners);
@@ -26,22 +26,10 @@ const clickListners: ClickListners = new ClickListners();
 (window as any).handleListnerTaskRemove =
   clickListners.handleListnerTaskRemove.bind(clickListners);
 
-  (window as any).handleSignIn =
-  clickListners.handleSignIn.bind(clickListners);
+(window as any).handleSignIn = clickListners.handleSignIn.bind(clickListners);
 
-  (window as any).handleSignOut =
-  clickListners.handleSignOut.bind(clickListners);
+(window as any).handleSignOut = clickListners.handleSignOut.bind(clickListners);
 
+const generateData = new GenerateData();
 
-//log app event
-
-AppLogEvents.addAppLogEvent("Page ready");
-
-// test
-
-const page = new Page();
-page.setPageName("test");
-page.setPageCategory("test Category");
-
-store.dispatch(updatePage(page));
-logger.log("Page Updated : ", store.getState());
+generateData.handlePageLoad();

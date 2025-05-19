@@ -9,7 +9,7 @@ export class AppLogEvents {
   static addAppLogEvent(eventName) {
     this.app_log_events.push(eventName);
 
-    this.logger.info("app events : ", this.app_log_events);
+    //this.logger.info("app events : ", this.app_log_events);
     //update UI with latest data
     const parentElement = document.getElementById("app-events-ul");
     if (!!parentElement) {

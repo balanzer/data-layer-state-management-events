@@ -13,7 +13,7 @@ export class DataAppEvents {
   }
   static handleDataEvent(eventName) {
     this.data_events.push(eventName);
-    this.logger.info("data events : ", this.data_events);
+    //this.logger.info("data events : ", this.data_events);
     //update UI with latest data
     const parentElement = document.getElementById("data-events-ul");
     if (!!parentElement) {
