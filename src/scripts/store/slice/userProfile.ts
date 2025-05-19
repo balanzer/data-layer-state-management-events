@@ -8,13 +8,13 @@ const userProfileSlice = createSlice({
   name: "userProfile",
   initialState: [],
   reducers: {
-    updatePastStays: (state: any, action) => {
+    updateProfileData: (state: any, action) => {
       const data: any = action.payload;
-      DataAppEvents.addDataEvent("userProfile:pastStays:update");
+      DataAppEvents.addDataEvent("userProfile:update");
       return data;
     },
   },
 });
 
-export const { updatePastStays } = userProfileSlice.actions;
+export const { updateProfileData } = userProfileSlice.actions;
 export default userProfileSlice.reducer;

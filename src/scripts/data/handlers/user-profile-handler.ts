@@ -1,18 +1,22 @@
 import { Logger } from "../../logger/log";
-import { updatePastStays } from "../../store/slice/userProfile";
+import { updateProfileData } from "../../store/slice/userProfile";
 import store from "../../store/store";
 
 import pastStays from ".././samples/profile/past-stays.json";
+import profileData from ".././samples/profile/my-profile.json";
+import tierInfo from ".././samples/profile/tier-info.json";
 
 import { DATA_VALUES } from ".././samples/config";
 export class UserProfileHandler {
   logger = new Logger("user-profile-handler");
   constructor() {}
   loadProfileData() {
-    //const profileData = JSON.parse(DATA_VALUES.profile.userprofile);
-    //const tierInfo = JSON.parse(DATA_VALUES.profile.tierinfo);
+    const userProfile = {
+      pastStays: pastStays,
+      tierInfo: tierInfo,
+      userProfile: profileData,
+    };
 
-    store.dispatch(updatePastStays(pastStays));
-    //console.log("pastStays Data: ", pastStays);
+    store.dispatch(updateProfileData(userProfile));
   }
 }
