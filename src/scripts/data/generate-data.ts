@@ -3,7 +3,7 @@ import { updatePage } from "../store/slice/pageSlice";
 import store from "../store/store";
 import { AppLogEvents } from "./events/app-events";
 import { Page } from "./models/Page";
-
+import { UserProfileHandler } from "./handlers/user-profile-handler";
 export class GenerateData {
   logger = new Logger("generate-data");
   constructor() {
@@ -31,14 +31,13 @@ export class GenerateData {
     this.logger.log("Page Updated : ", store.getState());
   }
 }
-function processTrackingJson() {
-
-}
+function processTrackingJson() {}
 function handlePageErrors() {
   //TODO: handle page errors
 }
 
 function processAPIResponse() {
+  const profileHandler = new UserProfileHandler();
+  profileHandler.loadProfileData();
   //TODO: handle API Response
-  
 }
