@@ -13,7 +13,7 @@ const pageSlice = createSlice({
 
     updatePage: (state: any, action) => {
       const page: Page = action.payload;
-      DataAppEvents.addDataEvent("data:page:update");
+      DataAppEvents.addDataEvent("page:update");
       return page;
     },
   },

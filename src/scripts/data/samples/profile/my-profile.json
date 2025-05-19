@@ -1,0 +1,132 @@
+{
+  "id": 1346372980,
+  "rewardsClubMemberNumber": "184927159",
+  "enterpriseId": "956468886",
+  "uid": "ea4dd9d7-ec51-4669-9819-98b89ed0f9a1",
+  "name": {
+    "firstName": "Mura",
+    "lastName": "Vara",
+    "countryCode": "US"
+  },
+  "preferredAddress": {
+    "id": 726537386,
+    "preferred": true,
+    "isoLanguageCode": "en",
+    "line1": "3 RAVINIA DR",
+    "usageType": "HOME",
+    "locality1": "ATLANTA",
+    "locality2": "US",
+    "postalCode": "30346-2118",
+    "region1": "GA",
+    "countryCode": "US",
+    "location": {}
+  },
+  "preferredEmail": {
+    "id": 726537388,
+    "preferred": true,
+    "usageType": "HOME",
+    "address": "mtvrhere@gmail.com",
+    "format": "HTML"
+  },
+  "preferredPhone": {
+    "id": 738939046,
+    "preferred": true,
+    "usageType": "HOME",
+    "phoneType": "MOBILE",
+    "fullNumber": "2032032031",
+    "sms": false,
+    "verified": false,
+    "icc": "1"
+  },
+  "nameOnCard": "Mura Vara",
+  "travelProfiles": [
+    {
+      "id": 307503676,
+      "name": "Leisure",
+      "type": "LS",
+      "ratePreferences": [],
+      "creditCard": {
+        "cardToken": "7411226414471111",
+        "expirationMonth": "03",
+        "expirationYear": "2026",
+        "creditCardType": "VS",
+        "billingAddress": {
+          "id": 1090112142,
+          "preferred": false,
+          "isoLanguageCode": "en",
+          "line1": "3 RAVINIA DR",
+          "usageType": "HOME",
+          "locality1": "ATLANTA",
+          "postalCode": "30346-2118",
+          "region1": "GA",
+          "countryCode": "US",
+          "location": {}
+        }
+      },
+      "default": true
+    },
+    {
+      "id": 374573232,
+      "name": "Business Rewards",
+      "type": "BR",
+      "ratePreferences": [],
+      "creditCard": {
+        "cardToken": "7411226414471111",
+        "expirationMonth": "02",
+        "expirationYear": "2027",
+        "creditCardType": "VS",
+        "billingAddress": {
+          "id": 1090092236,
+          "preferred": false,
+          "isoLanguageCode": "en",
+          "line1": "3 RAVINIA DR",
+          "usageType": "HOME",
+          "locality1": "ATLANTA",
+          "postalCode": "30346-2118",
+          "region1": "GA",
+          "countryCode": "US",
+          "location": {}
+        }
+      },
+      "default": false
+    }
+  ],
+  "countryGroupings": [],
+  "programs": [
+    {
+      "memberNumber": "184927159",
+      "programCode": "BR",
+      "statusCode": "O",
+      "levelCode": "BR",
+      "levelDescription": "IHG Business Rewards",
+      "enrollmentDate": "2023-02-21",
+      "yearToDateSummary": {
+        "earnedPoints": 0
+      },
+      "earningType": "POINTS",
+      "membershipKey": 329003922,
+      "isLifetimeLevel": false,
+      "numberOfEvents": 1
+    },
+    {
+      "memberNumber": "184927159",
+      "programCode": "PC",
+      "statusCode": "O",
+      "levelCode": "CLUB",
+      "levelDescription": "CLUB",
+      "enrollmentDate": "2020-01-14",
+      "currentPointsBalance": 0,
+      "yearToDateSummary": {
+        "rolloverNights": 0,
+        "rewardNights": 0,
+        "qualifyingNights": 0,
+        "earnedPoints": 0,
+        "eliteQualifyingEarnedPoints": 0
+      },
+      "earningType": "POINTS",
+      "membershipKey": 261467366,
+      "isLifetimeLevel": false
+    }
+  ],
+  "isPinCreated": false
+}

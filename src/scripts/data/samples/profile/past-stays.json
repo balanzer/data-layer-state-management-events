@@ -1,0 +1,501 @@
+{
+  "stays": [
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "US",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    },
+    {
+      "confirmationNumber": "20594011",
+      "bookingDate": "2024-11-12",
+      "checkInDate": "2025-02-15",
+      "checkOutDate": "2025-02-16",
+      "allianceId": "PC",
+      "allianceMemberId": "184927159",
+      "corporateAccountNumber": null,
+      "folioId": "-1",
+      "roomTypeCode": "XEXG",
+      "roomNumber": null,
+      "sourceCode": "GNR",
+      "guest": {
+        "rewardsClubMemberNumber": "184927159",
+        "firstName": "MURA",
+        "lastName": "VARA",
+        "address": {
+          "line1": "3 RAVINIA DR",
+          "line2": "ATLANTA GA 30346-2118",
+          "line3": "UNITED STATES",
+          "line4": null,
+          "line5": null,
+          "locality1": null,
+          "region1": null,
+          "postalCode": null,
+          "countryCode": null
+        }
+      },
+      "hotelMnemonic": "DOHWB",
+      "stayId": "4010003764",
+      "numberOfAdults": 1,
+      "rateCode": "IDME0",
+      "folios": [],
+      "originalActivityId": "202502222140119002",
+      "pmsConfirmationNumber": null,
+      "_links": {
+        "self": {
+          "href": "/stays/v1/hotelStays"
+        }
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/stays/v1/hotelStays?memberKey=1346372980"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "tierEarnedDate": null,
+  "typeOfEarn": null,
+  "tierLevelThresholds": [
+    {
+      "year": 2025,
+      "currentLevelCode": "CLUB",
+      "currentLevelDescription": "CLUB",
+      "nextLevelCode": "SLVR",
+      "nextLevelDescription": "SILVER ELITE",
+      "thresholds": [
+        {
+          "type": "NIGHTS",
+          "counters": [
+            {
+              "unitsToMaintain": null,
+              "unitsToAchieve": 10,
+              "neededToMaintain": null,
+              "neededToAchieve": 10,
+              "accumulator": "TIER_LEVEL_NIGHT",
+              "unitsEarned": 0,
+              "subcounters": [
+                {
+                  "accumulator": "QUALIFIED_ROOM_NIGHT",
+                  "unitsEarned": 0
+                },
+                {
+                  "accumulator": "REWARD_NIGHT",
+                  "unitsEarned": 0
+                },
+                {
+                  "accumulator": "AWARDED_TIER_LEVEL_NIGHT",
+                  "unitsEarned": 0
+                },
+                {
+                  "accumulator": "DEPOSITED_TIER_LEVEL_NIGHT",
+                  "unitsEarned": 0
+                },
+                {
+                  "accumulator": "ROLLOVER_NIGHT",
+                  "unitsEarned": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "/members/v2/memberships/261467366/tierLevelThresholds"
+    }
+  }
+}
