@@ -1,0 +1,432 @@
+{
+  "application": {
+    "version": "1.25",
+    "bookingComponentVersion": 12,
+    "aempage": "",
+    "anguular": ""
+  },
+  "page": {
+    "pageInfo": {
+      "name": "us:en:home",
+      "type": "Homepage",
+      "domain": "test.com",
+      "path": "/hotel",
+      "query": "",
+      "referringURL": "http://www.google.com/url?&q=&esrc=s",
+      "title": "this is test home page | Home Page"
+    },
+    "attributes": {
+      "country": "United States",
+      "language": "English"
+    },
+    "category": {
+      "primaryCategory": "FAQ Pages",
+      "subCategory": "ProductInfo",
+      "contentPage": ""
+    },
+    "brand": {
+      "siteBrand": "ex",
+      "pageidbrand": "",
+      "siteLocale": "en_US"
+    }
+  },
+  "previousPage": {},
+  "device": {
+    "orientation": "landscape",
+    "viewport": "medium",
+    "browser": {
+      "browser": "chrome",
+      "browserVersion": "135.0.0.0",
+      "device": "others",
+      "deviceType": "desktop",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+    }
+  },
+  "search": {
+    "searchInfo": {
+      "childAge": "",
+      "destination": "Boston, Massachusetts, US",
+      "checkIn": "2025-05-17",
+      "checkOut": "2025-05-18",
+      "stayLength": 2,
+      "roomNights": 1,
+      "rooms": 1,
+      "adults": 1,
+      "children": "0",
+      "totalGuests": 1,
+      "rewardsPoints": "No",
+      "specialRate": "No",
+      "specialRateType": "",
+      "specialRateCode": "",
+      "initialRateCode": "BAR",
+      "iataCode": "00093763",
+      "searchResultsCount": 6,
+      "searchChannel": "locality|political",
+      "searchBrand": "ihg-hotel-group",
+      "currentLocation": "No",
+      "searchQueryType": "",
+      "availCalUsed": "no",
+      "search_destination_city": "Chicago",
+      "search_destination_city_state_country": "Chicago,IL,US",
+      "search_destination_country": "US",
+      "search_destination_lat_long": "41.8781136,-87.6297982",
+      "search_destination_state": "IL",
+      "search_destination_type": "City",
+      "groupCode": "",
+      "corprateNumber": "",
+      "amenities": "",
+      "destLatitude": "",
+      "destLongitude": "",
+      "searchedDestination": "",
+      "ratePreference": "",
+      "currencyPreference": "",
+      "brands": "",
+      "sortBy": "",
+      "searchRadius": ""
+    }
+  },
+  "searchList": [
+    {
+      "price": 678,
+      "priceUSD": 678,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 583,
+      "priceUSD": 583,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 749,
+      "priceUSD": 749,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 644,
+      "priceUSD": 644,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 908,
+      "priceUSD": 908,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 778,
+      "priceUSD": 778,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1008,
+      "priceUSD": 1008,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 863,
+      "priceUSD": 863,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1195,
+      "priceUSD": 1195,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1023,
+      "priceUSD": 1023,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1345,
+      "priceUSD": 1345,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1151,
+      "priceUSD": 1151,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1625,
+      "priceUSD": 1625,
+      "srp": "LV0",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    },
+    {
+      "price": 1388,
+      "priceUSD": 1388,
+      "srp": "HPPAP2",
+      "propCode": "MIABMHF",
+      "currency": "USD"
+    }
+  ],
+  "product": {
+    "hotelCode": "ATLCP",
+    "hotelName": "",
+    "hotelCity": "",
+    "hotelState": "",
+    "hotelCountry": "",
+    "hotelBrand": "",
+    "hotelChain": "",
+    "brand": {
+      "hotelBrand": "",
+      "hotelBrand4Digit": ""
+    },
+    "propertyInfo": {
+      "propertyImg": "/content/dam/property-images/en-us/tq/us/fl/miami-beach/48182/48182_aerial_view_2.jpg",
+      "siteID": "48182",
+      "brandID": "TQ",
+      "tierBrandID": "",
+      "propertyName": "MB Hotel, Trademark Collection by Wyndham",
+      "propertyCity": "Miami Beach",
+      "propertyState": "FL",
+      "propertyPostal": "33141",
+      "propertyCountry": "US",
+      "hotelCityStateCountryCode": "",
+      "bookedLocation": "",
+      "imageResolution": "low-res",
+      "tierNum": "103",
+      "favoriteSiteID": "",
+      "propertySiteID": "",
+      "propertyImgDefault": false,
+      "propertyID": "48182TQ",
+      "prof_address_state": "unauthenticated",
+      "prop_address_city": "Chicago",
+      "prop_address_city_state_country": "Chicago|IL|US",
+      "prop_address_country_abbr": "US",
+      "prop_address_lat_long": "41.87899166881887,-87.63244590179058",
+      "prop_address_state_abbr": "IL",
+      "prop_address_state_name": "Illinois",
+      "prop_brand_code": "AK",
+      "prop_brand_name": "Autograph Collection",
+      "prop_brand_tier": "Premium",
+      "prop_currency_type": "USD",
+      "prop_hws_page": "overview",
+      "prop_hws_tier": "Core",
+      "prop_is_ers": "false",
+      "prop_marsha_code": "CHIAD"
+    }
+  },
+  "roomRates": {
+    "selectionToggleView": "",
+    "rooms": [
+      {
+        "roomName": "2 Double Beds, Non-Smoking",
+        "roomCode": "NDD1",
+        "alertValue": "Only 2 rooms left!"
+      },
+      {
+        "roomName": "2 Queen Beds, Oversized Room, Non-Smoking",
+        "roomCode": "NQQ3",
+        "alertValue": "no alert message"
+      }
+    ],
+    "visibleRates": [
+      {
+        "rateName": "Standard Rate",
+        "ratePlan": "RROD"
+      },
+      {
+        "rateName": "Wyndham Rewards Rate",
+        "ratePlan": "SWR1"
+      },
+      {
+        "rateName": "Hotel Special, 15% Off",
+        "ratePlan": "SPD6"
+      }
+    ],
+    "hiddenRates": [
+      {
+        "rateName": "Hotel Special, 10% Off",
+        "ratePlan": "SPD4"
+      },
+      {
+        "rateName": "Pay Now & Save, Non-Refundable",
+        "ratePlan": "SSPB"
+      },
+      {
+        "rateName": "Wyndham Rewards Double Points Rate",
+        "ratePlan": "SDC4"
+      },
+      {
+        "rateName": "Family Breakfast Package",
+        "ratePlan": "PKFAM"
+      },
+      {
+        "rateName": "Sweet Escape Package",
+        "ratePlan": "PKLUV"
+      },
+      {
+        "rateName": "Standard Rate with Breakfast",
+        "ratePlan": "RODBK"
+      },
+      {
+        "rateName": "Discounted Nights with Points + Cash",
+        "ratePlan": "SRB8"
+      },
+      {
+        "rateName": "Discounted Nights with Points + Cash",
+        "ratePlan": "SRB7"
+      },
+      {
+        "rateName": "",
+        "ratePlan": "SRB8"
+      },
+      {
+        "rateName": "",
+        "ratePlan": "SRB7"
+      },
+      {
+        "rateName": "Standard Rate",
+        "ratePlan": "RROD"
+      },
+      {
+        "rateName": "Wyndham Rewards Rate",
+        "ratePlan": "SWR1"
+      },
+      {
+        "rateName": "Hotel Special, 15% Off",
+        "ratePlan": "SPD6"
+      }
+    ]
+  },
+  "cart": {
+    "res_booking_room_Count": "2",
+    "res_cash_points_mix": "Cash",
+    "res_isRedemption": "false",
+    "res_market_code": "35MS2E",
+    "res_market_prefix": "35",
+    "res_num_adults": "3",
+    "res_num_children": "1",
+    "res_rate_is_member_rate": "true",
+    "res_rate_program": "MS2E",
+    "res_revenue_adr_rate_usd": "857.33",
+    "res_revenue_adr_total_locale": "857.33",
+    "res_revenue_currency_type": "USD",
+    "res_revenue_total": "2572.00",
+    "res_revenue_total_locale": "3019.53",
+    "res_revenue_total_usd": "2572.00",
+    "res_room_nights_total": "6",
+    "res_room_pool_code": "LUXR",
+    "res_room_rate_tab": "Rate Tab:Prepay and Save",
+    "res_rooms_per_night": "2",
+    "res_stay_length": "3",
+    "res_total_points_for_stay": "0",
+    "details": {
+      "attributes": {
+        "currency": "USD",
+        "item": [
+          {
+            "productInfo": {
+              "advanceDays": 16,
+              "endDate": "05172025",
+              "productID": "MIABMHF",
+              "roomNights": 2,
+              "roomTypeCode": "K1RPU1",
+              "startDate": "05152025",
+              "potentialRevenue": 3353.38,
+              "ratePlan": "HPPRP1",
+              "totalPrice": 3353.38
+            }
+          }
+        ]
+      }
+    }
+  },
+  "transaction": {
+    "currencyConverter": {
+      "currency": "",
+      "previousCurrency": ""
+    }
+  },
+  "event": {},
+  "privacy": {},
+  "marketing": {
+    "iata": {
+      "iata": "",
+      "cookieCreationDate": ""
+    },
+    "glat": "meta",
+    "cm_mmc": "",
+    "cm_sp": ""
+  },
+  "user": {
+    "loginType": "explicit",
+    "profile": {
+      "rewardsNumber": "1849271123",
+
+      "membershipStatus": "PLATINUM ELITE",
+      "membershipStatusCode": "PLTN",
+      "karmaMember": "false",
+      "ambassadorMember": "false",
+      "pointsBalance": "0"
+    },
+    "region": {
+      "city": "Boston",
+      "state": "MA",
+      "countryCode": "US",
+      "region": "AMER",
+      "akamaiSubRegion": "North America"
+    },
+    "bot": {
+      "isBot": false
+    }
+  },
+  "error": [
+    {
+      "errorInfo": {
+        "errorMessage": "",
+        "errorType": ""
+      }
+    }
+  ],
+  "dataWarning": [
+    {
+      "warningInfo": {
+        "message": "",
+        "value": "",
+        "property": ""
+      }
+    }
+  ],
+  "version": {
+    "environment": "prod",
+    "jsonSource": "gs-json"
+  },
+  "cookie": {
+    "donain": "www.ihg.com"
+  },
+  "appData": {
+    "mvtCashRoomRates": {},
+    "mvtHotelDetails": {},
+    "mvtThemePictures": {},
+    "mvtPackagesRoomRates": {},
+    "mvtPointsRoomRates": {},
+    "hotelOffersListEvent": {}
+  }
+}
