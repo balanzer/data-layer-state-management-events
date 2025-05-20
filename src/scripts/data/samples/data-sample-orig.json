@@ -1,8 +1,9 @@
 {
   "application": {
-    "appName": "find-hotels",
-    "appVersion": "v14.116.3",
-    "bookingComponentVersion": "v13.116.3"
+    "version": "1.25",
+    "bookingComponentVersion": 12,
+    "aempage": "",
+    "anguular": ""
   },
   "page": {
     "pageInfo": {
@@ -24,13 +25,9 @@
       "contentPage": ""
     },
     "brand": {
-      "brandCode": "6c",
-      "brandName": "InterContinental Hotels Group"
-    },
-    "locale": {
-      "country": "us",
-      "language": "en",
-      "localeString": "en_US"
+      "siteBrand": "ex",
+      "pageidbrand": "",
+      "siteLocale": "en_US"
     }
   },
   "previousPage": {},
