@@ -6,13 +6,13 @@
   },
   "page": {
     "pageInfo": {
-      "name": "us:en:home",
-      "type": "Homepage",
-      "domain": "test.com",
-      "path": "/hotel",
-      "query": "",
+      "name": "local-guide-whats-nearby",
+      "type": "hotel-information",
+      "domain": "ihg.com",
+      "path": "/holidayinnexpress/hotels/us/en/miami/miaex/hoteldetail/local-guide-whats-nearby",
+      "query": "fromRedirect=true&qBrs=6c.hi.ex.sb.ul.ic.cp.cw.in.vn.cv.rs.ki.kd.ma.sp.va.re.vx.nd.sx.we.lx.rn.sn.nu&qSrt=sAV&qDest=Miami%20Airport&qErm=false&qRms=1&qAdlt=1&qChld=0&qCiD=20&qCiMy=042025&qCoD=21&qCoMy=042025&qAAR=6CBARC&qRtP=6CBARC&setPMCookies=true&qpMbw=0&qpMn=0&srb_u=1&qRad=30&qRdU=mi",
       "referringURL": "http://www.google.com/url?&q=&esrc=s",
-      "title": "this is test home page | Home Page"
+      "title": "Things to do in Miami near Holiday Inn Express & Suites Miami Airport East Hotel"
     },
     "attributes": {
       "country": "United States",
