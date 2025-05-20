@@ -10,12 +10,12 @@ import { updatePage } from "./store/slice/pageSlice";
 
 const logger = new Logger("main-app");
 
-//INIT Todo tasks app
-const appTasks: AppTasks = new AppTasks();
-appTasks.setupListners();
-//if (location.pathname.includes("/todo.html")) {
-appTasks.addDummyTasks();
-//}
+if (location.pathname.includes("/todo.html")) {
+  //INIT Todo tasks app
+  const appTasks: AppTasks = new AppTasks();
+  appTasks.setupListners();
+  appTasks.addDummyTasks();
+}
 
 const clickListners: ClickListners = new ClickListners();
 
@@ -29,6 +29,9 @@ const clickListners: ClickListners = new ClickListners();
 (window as any).handleSignIn = clickListners.handleSignIn.bind(clickListners);
 
 (window as any).handleSignOut = clickListners.handleSignOut.bind(clickListners);
+
+(window as any).handleEnableDebug =
+  clickListners.handleEnableDebug.bind(clickListners);
 
 const generateData = new GenerateData();
 

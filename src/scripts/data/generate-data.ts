@@ -37,7 +37,12 @@ function handlePageErrors() {
 }
 
 function processAPIResponse() {
-  const profileHandler = new UserProfileHandler();
-  profileHandler.loadProfileData();
-  //TODO: handle API Response
+  if (
+    !!(location as any).search &&
+    !!(location as any).search.includes("debug=true")
+  ) {
+    const profileHandler = new UserProfileHandler();
+    profileHandler.loadProfileData();
+    //TODO: handle API Response
+  }
 }

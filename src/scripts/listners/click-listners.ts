@@ -16,19 +16,27 @@ export class ClickListners {
     appTasks.removeTask(id);
   }
 
-
   handleSignIn() {
-     console.log("handleSignIn");
-     document.getElementById('app-sign-in').style.display='none';
-     document.getElementById('app-sign-out').style.display='block';
+    console.log("handleSignIn");
+    document.getElementById("app-sign-in").style.display = "none";
+    document.getElementById("app-sign-out").style.display = "block";
   }
-
 
   handleSignOut() {
     console.log("handleSignOut");
-    document.getElementById('app-sign-in').style.display='block';
-    document.getElementById('app-sign-out').style.display='none';
+    document.getElementById("app-sign-in").style.display = "block";
+    document.getElementById("app-sign-out").style.display = "none";
   }
 
-
+  handleEnableDebug() {
+    let url = window.location.href;
+    if (url.indexOf("debug=true") == -1) {
+      if (url.indexOf("?") > -1) {
+        url += "&debug=true";
+      } else {
+        url += "?debug=true";
+      }
+      window.location.href = url;
+    }
+  }
 }
