@@ -1,0 +1,24 @@
+{
+  "error": [
+    {
+      "errorCode": 0,
+      "errorEndpoint": "https://apis.ihg.com/locations/v1/destinations",
+      "errorMessage": "Http failure response for https://apis.ihg.com/locations/v1/destinations: 0 Unknown Error",
+      "errorType": "Http failure response for https://apis.ihg.com/locations/v1/destinations: 0 Unknown Error",
+      "statusCode": 0
+    },
+    {
+      "errorCode": 0,
+      "errorEndpoint": "https://apis.ihg.com/rates/v1/categories",
+      "errorMessage": "Http failure response for https://apis.ihg.com/rates/v1/categories: 0 Unknown Error",
+      "errorType": "Http failure response for https://apis.ihg.com/rates/v1/categories: 0 Unknown Error",
+      "statusCode": 0
+    },
+    {
+      "errorMessage": "TypeError: undefined is not an object (evaluating 'e.touches[0].target')"
+    },
+    {
+      "errorMessage": "unhandledrejection: Load failed"
+    }
+  ]
+}

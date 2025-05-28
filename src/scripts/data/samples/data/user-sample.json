@@ -1,0 +1,24 @@
+{
+  "user": {
+    "loginType": "explicit",
+    "profile": {
+      "rewardsNumber": "1849271123",
+
+      "membershipStatus": "PLATINUM ELITE",
+      "membershipStatusCode": "PLTN",
+      "karmaMember": "false",
+      "ambassadorMember": "false",
+      "pointsBalance": "12390"
+    },
+    "region": {
+      "city": "Boston",
+      "state": "MA",
+      "countryCode": "US",
+      "region": "AMER",
+      "akamaiSubRegion": "North America"
+    },
+    "bot": {
+      "isBot": false
+    }
+  }
+}

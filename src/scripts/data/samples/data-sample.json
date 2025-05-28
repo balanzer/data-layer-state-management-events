@@ -65,15 +65,21 @@
       }
     ],
     "event": {},
-    "privacy": {},
+    "privacy": {
+      "notice_behavior": "implied,us",
+      "notice_gdpr_prefs": "0,1,2,3:",
+      "notice_poptime": 1720533300000,
+      "notice_preferences": "3:"
+    },
     "marketing": {
       "iata": {
-        "iata": "",
-        "cookieCreationDate": ""
+        "iata": "99636924",
+        "cookieCreationDate": "2025-05-10"
       },
       "glat": "meta",
-      "cm_mmc": "",
-      "cm_sp": ""
+      "cm_mmc": "hpa_paid_US_desktop_BOSTB_localuniversal_3_USD_2025-06-27_selected_22523838911__FALSE_CSTGIDAS1",
+      "cm_sp": "",
+      "mktgvar": "go_cmp-19663174991_adg-144356118685_ad-647727792195_kwd-43145641_dev-c_ext-"
     },
     "user": {
       "loginType": "explicit",
