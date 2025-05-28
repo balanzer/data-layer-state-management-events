@@ -7,17 +7,32 @@ const logger = new Logger("page-slice");
 
 const pageSlice = createSlice({
   name: "page",
-  initialState: {},
+  initialState: { page: {}, previousPage: {}, application: {} },
   reducers: {
     // action: function
 
     updatePage: (state: any, action) => {
-      const page: Page = action.payload;
+      const page: any = action.payload;
       DataAppEvents.addDataEvent("page:update");
-      return page;
+
+      state.page = page;
+
+      //return page;
+    },
+    updatePreviousPage: (state: any, action) => {
+      const previousPage: any = action.payload;
+      //DataAppEvents.addDataEvent("page:previous:update");
+
+      state.previousPage = previousPage;
+    },
+    updateApplication: (state: any, action) => {
+      const app: any = action.payload;
+      //DataAppEvents.addDataEvent("page:previous:update");
+      state.application = app;
     },
   },
 });
 
-export const { updatePage } = pageSlice.actions;
+export const { updatePage, updateApplication, updatePreviousPage } =
+  pageSlice.actions;
 export default pageSlice.reducer;
