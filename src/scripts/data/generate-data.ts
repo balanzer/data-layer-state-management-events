@@ -7,12 +7,12 @@ import { UserProfileHandler } from "./handlers/user-profile-handler";
 export class GenerateData {
   logger = new Logger("generate-data");
   constructor() {
-    this.logger.info("init");
+    this.logger.log("init");
   }
 
   handlePageLoad() {
     const pathname = location.pathname;
-    this.logger.info("handle path : ", pathname);
+    this.logger.log("handle path : ", pathname);
 
     handlePageErrors();
     processAPIResponse();
@@ -21,19 +21,34 @@ export class GenerateData {
     //log app event
     AppLogEvents.addAppLogEvent("Page ready");
 
+    /* Remove */
+
     // test
 
     const page = new Page();
-    page.setPageName("test");
-    page.setPageCategory("test Category");
 
     store.dispatch(updatePage(page));
     this.logger.log("Page Updated : ", store.getState());
+
+    /* Remove */
+
+    //save data for next page
+    saveData();
   }
 }
 function processTrackingJson() {}
 function handlePageErrors() {
   //TODO: handle page errors
+}
+
+function saveData() {
+  //save page data for previous page
+  const currentState = store.getState();
+  if (!!currentState && !!currentState.page) {
+    const pageData = currentState.page;
+    console.log("page data : ", pageData);
+    sessionStorage.setItem("previousPageData", JSON.stringify(pageData));
+  }
 }
 
 function processAPIResponse() {
