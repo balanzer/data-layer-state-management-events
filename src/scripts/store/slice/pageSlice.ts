@@ -22,7 +22,6 @@ const pageSlice = createSlice({
     updatePreviousPage: (state: any, action) => {
       const previousPage: any = action.payload;
       //DataAppEvents.addDataEvent("page:previous:update");
-
       state.previousPage = previousPage;
     },
     updateApplication: (state: any, action) => {

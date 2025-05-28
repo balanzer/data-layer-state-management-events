@@ -4,12 +4,27 @@ import {
   updateApplication,
   updatePreviousPage,
 } from "../store/slice/pageSlice";
+
+import {
+  updatePrivacy,
+  updateDevice,
+  updateErrors,
+  updateMarketing,
+  updateUser,
+} from "../store/slice/otherSlice";
+
 import store from "../store/store";
 import { AppLogEvents } from "./events/app-events";
-import { Page } from "./models/Page";
 import { UserProfileHandler } from "./handlers/user-profile-handler";
 
 import pageSample from "../data/samples/data/page-sample.json";
+import deviceSample from "../data/samples/data/device-sample.json";
+import privacySample from "../data/samples/data/privacy-sample.json";
+
+import errorSample from "../data/samples/data/error-sample.json";
+import marketingSample from "../data/samples/data/marketing-sample.json";
+import userSample from "../data/samples/data/user-sample.json";
+
 export class GenerateData {
   logger = new Logger("generate-data");
   constructor() {
@@ -24,8 +39,20 @@ export class GenerateData {
     processAPIResponse();
     processTrackingJson();
 
-    //log app event
-    AppLogEvents.addAppLogEvent("Page ready");
+    // add privacy data
+    const privacy: any = privacySample.privacy;
+    store.dispatch(updatePrivacy(privacy));
+    //add device data
+    store.dispatch(updateDevice(deviceSample.device));
+
+    //error data
+    store.dispatch(updateErrors(errorSample.error));
+    //marketing data
+    store.dispatch(updateMarketing(marketingSample.marketing));
+    //user data
+    store.dispatch(updateUser(userSample.user));
+
+    /*generate page data */
 
     const page: any = pageSample.page;
     const application: any = pageSample.application;
@@ -39,6 +66,9 @@ export class GenerateData {
 
     //save data for next page
     saveData();
+
+    //log app event
+    AppLogEvents.addAppLogEvent("Page ready");
   }
 }
 function processTrackingJson() {}

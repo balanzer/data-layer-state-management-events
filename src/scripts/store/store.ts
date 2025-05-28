@@ -2,6 +2,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Logger } from "../logger/log";
 import taskReducer from "./slice/tasks";
 import pageReducer from "./slice/pageSlice";
+import {
+  deviceReducer,
+  privacyReducer,
+  userReducer,
+  errorReducer,
+  marketingReducer,
+} from "./slice/otherSlice";
 import userProfileReducer from "./slice/userProfile";
 import { DataAppEvents } from "../data/events/data-events";
 
@@ -16,6 +23,11 @@ const store = configureStore({
     page: pageReducer,
     tasks: taskReducer,
     userProfile: userProfileReducer,
+    device: deviceReducer,
+    privacy: privacyReducer,
+    user: userReducer,
+    errors: errorReducer,
+    marketing: marketingReducer,
   },
   devTools: true,
   middleware: (getDefaultMiddleware) =>
@@ -28,15 +40,16 @@ function handleChange() {
   let currentValue = store.getState();
 
   if (!!currentValue) {
-    //logger.info("current state : ", currentValue);
-
-    var jsonPrint = JSON.stringify(currentValue, undefined, 4);
+    var jsonPrint = JSON.stringify(currentValue, undefined, 2);
     logger.info("current data : ", currentValue);
 
     //update UI
 
     //text area
     (document.getElementById("data-state-text") as any).value = jsonPrint;
+
+    //json pre
+    (document.getElementById("data-state-json") as any).textContent = jsonPrint;
   }
 }
 
