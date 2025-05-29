@@ -39,10 +39,10 @@ export class GenerateData {
     handlePageErrors();
     processAPIResponse();
 
-    // processUserData();
-    // processMarketingData();
-    // processPrivacyData();
-    // processDeviceData();
+    processUserData();
+    processMarketingData();
+    processPrivacyData();
+    processDeviceData();
     processPageData();
 
     //save data for next page
