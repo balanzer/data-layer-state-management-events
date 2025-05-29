@@ -41,9 +41,9 @@ export class GenerateData {
 
     // processUserData();
     // processMarketingData();
-    processPrivacyData();
+    //processPrivacyData();
     // processDeviceData();
-    // processPageData();
+    processPageData();
 
     //save data for next page
     saveData();
@@ -79,6 +79,34 @@ function processPageData() {
   const previousPageData: any = !!previousPageDataStr
     ? JSON.parse(previousPageDataStr)
     : {};
+
+  /**update page values */
+
+  let primaryCategory = document.title.toLowerCase().replace(/\s/g, "-");
+  let subCategory = "";
+  let contentPage = "";
+
+  if (location.pathname.includes("details.html")) {
+    subCategory = "local-guide-whats-nearby";
+  }
+
+  page.pageInfo = {
+    domain: "ihg.com",
+    path: location.pathname,
+    query: location.search,
+    referringURL: document.referrer,
+    title: document.title,
+  };
+  page.category = {
+    primaryCategory: primaryCategory,
+    subCategory: subCategory,
+    contentPage: contentPage,
+  };
+  page.brand = {
+    brandCode: "hi",
+    brandName: "Holidayinn",
+  };
+
   store.dispatch(updatePage(page));
   store.dispatch(updatePreviousPage(previousPageData));
   store.dispatch(updateApplication(application));
