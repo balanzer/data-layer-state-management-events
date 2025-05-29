@@ -1,0 +1,15 @@
+{
+  "user": {
+    "loginType": "anonymous",
+    "region": {
+      "city": "Boston",
+      "state": "MA",
+      "countryCode": "US",
+      "region": "AMER",
+      "akamaiSubRegion": "North America"
+    },
+    "bot": {
+      "isBot": false
+    }
+  }
+}

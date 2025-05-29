@@ -20,12 +20,22 @@ export class ClickListners {
     console.log("handleSignIn");
     document.getElementById("app-sign-in").style.display = "none";
     document.getElementById("app-sign-out").style.display = "block";
+
+    const eventUser = new CustomEvent("app-user-sign-in", {
+      detail: {},
+    });
+    window.dispatchEvent(eventUser);
   }
 
   handleSignOut() {
     console.log("handleSignOut");
     document.getElementById("app-sign-in").style.display = "block";
     document.getElementById("app-sign-out").style.display = "none";
+
+    const eventUser = new CustomEvent("app-user-sign-out", {
+      detail: {},
+    });
+    window.dispatchEvent(eventUser);
   }
 
   handleEnableDebug() {

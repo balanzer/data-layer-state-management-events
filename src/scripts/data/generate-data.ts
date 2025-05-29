@@ -24,6 +24,7 @@ import privacySample from "../data/samples/data/privacy-sample.json";
 import errorSample from "../data/samples/data/error-sample.json";
 import marketingSample from "../data/samples/data/marketing-sample.json";
 import userSample from "../data/samples/data/user-sample.json";
+import userAnonSample from "../data/samples/data/user-anon-sample.json";
 
 export class GenerateData {
   logger = new Logger("generate-data");
@@ -37,32 +38,12 @@ export class GenerateData {
 
     handlePageErrors();
     processAPIResponse();
-    processTrackingJson();
 
-    // add privacy data
-    const privacy: any = privacySample.privacy;
-    store.dispatch(updatePrivacy(privacy));
-    //add device data
-    store.dispatch(updateDevice(deviceSample.device));
-
-    //error data
-    store.dispatch(updateErrors(errorSample.error));
-    //marketing data
-    store.dispatch(updateMarketing(marketingSample.marketing));
-    //user data
-    store.dispatch(updateUser(userSample.user));
-
-    /*generate page data */
-
-    const page: any = pageSample.page;
-    const application: any = pageSample.application;
-    const previousPageDataStr: any = sessionStorage.getItem("previousPageData");
-    const previousPageData: any = !!previousPageDataStr
-      ? JSON.parse(previousPageDataStr)
-      : {};
-    store.dispatch(updatePage(page));
-    store.dispatch(updatePreviousPage(previousPageData));
-    store.dispatch(updateApplication(application));
+    // processUserData();
+    // processMarketingData();
+    processPrivacyData();
+    // processDeviceData();
+    // processPageData();
 
     //save data for next page
     saveData();
@@ -71,9 +52,50 @@ export class GenerateData {
     AppLogEvents.addAppLogEvent("Page ready");
   }
 }
-function processTrackingJson() {}
+function processUserData() {
+  const userSignedIn = sessionStorage.getItem("userSignedIn");
+  if (!!userSignedIn && userSignedIn === "true") {
+    //user data
+    store.dispatch(updateUser(userSample.user));
+  } else {
+    store.dispatch(updateUser(userAnonSample.user));
+  }
+}
+function processMarketingData() {
+  //marketing data
+  store.dispatch(updateMarketing(marketingSample.marketing));
+}
+function processPrivacyData() {
+  // add privacy data
+  const privacy: any = privacySample.privacy;
+  store.dispatch(updatePrivacy(privacy));
+}
+function processPageData() {
+  /*generate page data */
+
+  const page: any = pageSample.page;
+  const application: any = pageSample.application;
+  const previousPageDataStr: any = sessionStorage.getItem("previousPageData");
+  const previousPageData: any = !!previousPageDataStr
+    ? JSON.parse(previousPageDataStr)
+    : {};
+  store.dispatch(updatePage(page));
+  store.dispatch(updatePreviousPage(previousPageData));
+  store.dispatch(updateApplication(application));
+}
+function processDeviceData() {
+  //add device data
+  store.dispatch(updateDevice(deviceSample.device));
+}
+
 function handlePageErrors() {
-  //TODO: handle page errors
+  if (
+    !!(location as any).search &&
+    !!(location as any).search.includes("errorFlow=true")
+  ) {
+    //error data
+    store.dispatch(updateErrors(errorSample.error));
+  }
 }
 
 function saveData() {
@@ -96,3 +118,12 @@ function processAPIResponse() {
     //TODO: handle API Response
   }
 }
+
+window.addEventListener("app-user-sign-in", function (e) {
+  sessionStorage.setItem("userSignedIn", "true");
+  processUserData();
+});
+window.addEventListener("app-user-sign-out", function (e) {
+  sessionStorage.setItem("userSignedIn", "false");
+  processUserData();
+});
