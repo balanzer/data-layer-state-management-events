@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Logger } from "../logger/log";
 import taskReducer from "./slice/tasks";
 import pageReducer from "./slice/pageSlice";
+
 import {
   deviceReducer,
   privacyReducer,
@@ -49,7 +50,12 @@ function handleChange() {
     (document.getElementById("data-state-text") as any).value = jsonPrint;
 
     //json pre
-    (document.getElementById("data-state-json") as any).textContent = jsonPrint;
+    //(document.getElementById("data-state-json") as any).textContent = jsonPrint;
+
+    const printEvent = new CustomEvent("app-print-json", {
+      detail: currentValue,
+    });
+    window.dispatchEvent(printEvent);
   }
 }
 

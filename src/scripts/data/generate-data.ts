@@ -43,7 +43,7 @@ export class GenerateData {
     // processMarketingData();
     // processPrivacyData();
     // processDeviceData();
-    // processPageData();
+    processPageData();
 
     //save data for next page
     saveData();

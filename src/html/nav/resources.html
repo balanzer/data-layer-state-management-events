@@ -10,9 +10,26 @@
   rel="stylesheet"
   href="../css/style.css"
 />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script
   type="module"
   src="../bundle.js"
 ></script>
+<script src="https://abodelot.github.io/jquery.json-viewer/json-viewer/jquery.json-viewer.js"></script>
+<link
+  href="https://abodelot.github.io/jquery.json-viewer/json-viewer/jquery.json-viewer.css"
+  type="text/css"
+  rel="stylesheet"
+/>
+
+<script>
+  window.addEventListener("app-print-json", function (e) {
+    $("#data-state-json").jsonViewer(e.detail, {
+      collapsed: true,
+      rootCollapsable: false,
+      withQuotes: false,
+      withLinks: false,
+    });
+  });
+</script>
