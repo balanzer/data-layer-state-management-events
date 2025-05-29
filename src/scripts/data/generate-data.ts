@@ -41,9 +41,9 @@ export class GenerateData {
 
     // processUserData();
     // processMarketingData();
-    //processPrivacyData();
+    // processPrivacyData();
     // processDeviceData();
-    processPageData();
+    // processPageData();
 
     //save data for next page
     saveData();
