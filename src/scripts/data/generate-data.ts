@@ -11,6 +11,9 @@ import {
   updateErrors,
   updateMarketing,
   updateUser,
+  updateSearchInfo,
+  updateHotelInfo,
+  updateRatesInfo,
 } from "../store/slice/otherSlice";
 
 import store from "../store/store";
@@ -25,6 +28,10 @@ import errorSample from "../data/samples/data/error-sample.json";
 import marketingSample from "../data/samples/data/marketing-sample.json";
 import userSample from "../data/samples/data/user-sample.json";
 import userAnonSample from "../data/samples/data/user-anon-sample.json";
+
+import searchDataSample from "../data/samples/data/search-sample.json";
+import hotelDataSample from "../data/samples/data/search-sample.json";
+import ratesDataSample from "../data/samples/data/search-sample.json";
 
 export class GenerateData {
   logger = new Logger("generate-data");
@@ -45,6 +52,14 @@ export class GenerateData {
     //processDeviceData();
     //processPageData();
 
+    if (location.pathname.includes("search.html")) {
+      processSearchData();
+    } else if (location.pathname.includes("details.html")) {
+      processProductData();
+    } else if (location.pathname.includes("rates.html")) {
+      processRatesData();
+    }
+
     //save data for next page
     saveData();
 
@@ -52,6 +67,17 @@ export class GenerateData {
     AppLogEvents.addAppLogEvent("Page ready");
   }
 }
+
+function processSearchData() {
+  store.dispatch(updateSearchInfo(searchDataSample.search));
+}
+function processProductData() {
+  store.dispatch(updateHotelInfo(hotelDataSample.search));
+}
+function processRatesData() {
+  store.dispatch(updateRatesInfo(ratesDataSample.search));
+}
+
 function processUserData() {
   const userSignedIn = sessionStorage.getItem("userSignedIn");
   if (!!userSignedIn && userSignedIn === "true") {

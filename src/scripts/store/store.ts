@@ -9,6 +9,9 @@ import {
   userReducer,
   errorReducer,
   marketingReducer,
+  searchReducer,
+  productReducer,
+  ratesReducer,
 } from "./slice/otherSlice";
 import userProfileReducer from "./slice/userProfile";
 import { DataAppEvents } from "../data/events/data-events";
@@ -29,6 +32,9 @@ const store = configureStore({
     user: userReducer,
     errors: errorReducer,
     marketing: marketingReducer,
+    search: searchReducer,
+    product: productReducer,
+    roomRates: ratesReducer,
   },
   devTools: true,
   middleware: (getDefaultMiddleware) =>

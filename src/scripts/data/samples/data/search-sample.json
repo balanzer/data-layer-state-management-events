@@ -16,9 +16,9 @@
       "search_destination_city_state_country": "Miami, Florida, US",
       "groupCode": "",
       "corprateNumber": "",
-      "amenities": "",
-      "destLatitude": "",
-      "destLongitude": "",
+      "amenities": ["BEACH_ACCESS,AIRPORT_SHUTTLE,BREAKFAST_INCLUDED"],
+      "destLatitude": "25.773899",
+      "destLongitude": "-80.193901",
       "ratePreference": "IVANI",
       "currencyPreference": "USD",
       "brands": [

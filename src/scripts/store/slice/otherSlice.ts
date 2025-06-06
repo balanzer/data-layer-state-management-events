@@ -64,14 +64,51 @@ const userSlice = createSlice({
   },
 });
 
+const searchSlice = createSlice({
+  name: "search",
+  initialState: {},
+  reducers: {
+    updateSearchInfo: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+const productSlice = createSlice({
+  name: "product",
+  initialState: {},
+  reducers: {
+    updateHotelInfo: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+const ratesSlice = createSlice({
+  name: "roomRates",
+  initialState: {},
+  reducers: {
+    updateRatesInfo: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+
 export const { updateDevice } = deviceSlice.actions;
 export const { updatePrivacy } = privacySlice.actions;
 export const { updateErrors } = errorSlice.actions;
 export const { updateMarketing } = marketingSlice.actions;
 export const { updateUser } = userSlice.actions;
+export const { updateSearchInfo } = searchSlice.actions;
+export const { updateHotelInfo } = productSlice.actions;
+export const { updateRatesInfo } = ratesSlice.actions;
 
 export const deviceReducer = deviceSlice.reducer;
 export const privacyReducer = privacySlice.reducer;
 export const errorReducer = errorSlice.reducer;
 export const marketingReducer = marketingSlice.reducer;
 export const userReducer = userSlice.reducer;
+export const searchReducer = searchSlice.reducer;
+export const productReducer = productSlice.reducer;
+export const ratesReducer = ratesSlice.reducer;
