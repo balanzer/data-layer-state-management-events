@@ -46,11 +46,11 @@ export class GenerateData {
     handlePageErrors();
     processAPIResponse();
 
-    //processUserData();
-    //processMarketingData();
+    processUserData();
+    processMarketingData();
     processPrivacyData();
-    //processDeviceData();
-    //processPageData();
+    processDeviceData();
+    processPageData();
 
     if (location.pathname.includes("search.html")) {
       processSearchData();
