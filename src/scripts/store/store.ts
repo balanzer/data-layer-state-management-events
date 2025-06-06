@@ -12,6 +12,7 @@ import {
   searchReducer,
   productReducer,
   ratesReducer,
+  appDataReducer,
 } from "./slice/otherSlice";
 import userProfileReducer from "./slice/userProfile";
 import { DataAppEvents } from "../data/events/data-events";
@@ -35,6 +36,7 @@ const store = configureStore({
     search: searchReducer,
     product: productReducer,
     roomRates: ratesReducer,
+    appData: appDataReducer,
   },
   devTools: true,
   middleware: (getDefaultMiddleware) =>

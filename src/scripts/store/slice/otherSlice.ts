@@ -95,6 +95,17 @@ const ratesSlice = createSlice({
   },
 });
 
+const appDataSlice = createSlice({
+  name: "appData",
+  initialState: {},
+  reducers: {
+    updateAppDataInfo: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+
 export const { updateDevice } = deviceSlice.actions;
 export const { updatePrivacy } = privacySlice.actions;
 export const { updateErrors } = errorSlice.actions;
@@ -103,6 +114,7 @@ export const { updateUser } = userSlice.actions;
 export const { updateSearchInfo } = searchSlice.actions;
 export const { updateHotelInfo } = productSlice.actions;
 export const { updateRatesInfo } = ratesSlice.actions;
+export const { updateAppDataInfo } = appDataSlice.actions;
 
 export const deviceReducer = deviceSlice.reducer;
 export const privacyReducer = privacySlice.reducer;
@@ -112,3 +124,4 @@ export const userReducer = userSlice.reducer;
 export const searchReducer = searchSlice.reducer;
 export const productReducer = productSlice.reducer;
 export const ratesReducer = ratesSlice.reducer;
+export const appDataReducer = appDataSlice.reducer;

@@ -14,6 +14,7 @@ import {
   updateSearchInfo,
   updateHotelInfo,
   updateRatesInfo,
+  updateAppDataInfo,
 } from "../store/slice/otherSlice";
 
 import store from "../store/store";
@@ -32,6 +33,7 @@ import userAnonSample from "../data/samples/data/user-anon-sample.json";
 import searchDataSample from "../data/samples/data/search-sample.json";
 import hotelDataSample from "../data/samples/data/search-sample.json";
 import ratesDataSample from "../data/samples/data/search-sample.json";
+import appDataSample from "../data/samples/data/app-data-sample.json";
 
 export class GenerateData {
   logger = new Logger("generate-data");
@@ -75,6 +77,7 @@ function processProductData() {
   store.dispatch(updateHotelInfo(hotelDataSample.search));
 }
 function processRatesData() {
+  store.dispatch(updateHotelInfo(hotelDataSample.search));
   store.dispatch(updateRatesInfo(ratesDataSample.search));
 }
 
@@ -169,7 +172,7 @@ function processAPIResponse() {
   ) {
     const profileHandler = new UserProfileHandler();
     profileHandler.loadProfileData();
-    //TODO: handle API Response
+    store.dispatch(updateAppDataInfo(appDataSample.appData));
   }
 }
 
