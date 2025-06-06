@@ -107,148 +107,205 @@
 
   {
     "search": {
-      "searchInfo": {
-        "childAge": "",
-        "destination": "Boston, Massachusetts, US",
+      "filters": {
+        "searchInputText": "miami",
+        "searchedDestination": "Miami, Florida, US",
         "checkIn": "2025-05-17",
         "checkOut": "2025-05-18",
         "stayLength": 2,
-        "roomNights": 1,
-        "rooms": 1,
-        "adults": 1,
-        "children": "0",
-        "totalGuests": 1,
-        "rewardsPoints": "No",
-        "specialRate": "No",
-        "specialRateType": "",
-        "specialRateCode": "",
-        "initialRateCode": "BAR",
-        "iataCode": "00093763",
-        "searchResultsCount": 6,
-        "searchChannel": "locality|political",
-        "searchBrand": "ihg-hotel-group",
-        "currentLocation": "No",
-        "searchQueryType": "",
-        "availCalUsed": "no",
-        "search_destination_city": "Chicago",
-        "search_destination_city_state_country": "Chicago,IL,US",
-        "search_destination_country": "US",
-        "search_destination_lat_long": "41.8781136,-87.6297982",
-        "search_destination_state": "IL",
-        "search_destination_type": "City",
+        "roomNights": 4,
+        "rooms": 2,
+        "adults": 3,
+        "children": 2,
+        "childrenAge": "9.5",
+        "totalGuests": 5,
+        "searchResultsCount": 45,
+        "search_destination_city_state_country": "Miami, Florida, US",
         "groupCode": "",
         "corprateNumber": "",
         "amenities": "",
         "destLatitude": "",
         "destLongitude": "",
-        "searchedDestination": "",
-        "ratePreference": "",
-        "currencyPreference": "",
-        "brands": "",
-        "sortBy": "",
-        "searchRadius": ""
-      }
+        "ratePreference": "IVANI",
+        "currencyPreference": "USD",
+        "brands": [
+          "6c",
+          "hi",
+          "ex",
+          "sb",
+          "ul",
+          "ic",
+          "cp",
+          "cw",
+          "in",
+          "vn",
+          "cv",
+          "rs",
+          "ki",
+          "kd",
+          "ma",
+          "sp",
+          "va",
+          "re",
+          "vx",
+          "nd",
+          "sx",
+          "we",
+          "lx",
+          "rn",
+          "sn",
+          "nu",
+          "ge"
+        ],
+        "sortBy": "distance",
+        "searchRadius": "30",
+        "searchRadiusUnit": "mi",
+        "minimumBookingWindow": "1"
+      },
+      "hotelList": [
+        {
+          "hotel_code": "MIAEP",
+          "search_rank": 1,
+          "currency_code": "USD",
+          "price_nightly": "207",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIABB",
+          "search_rank": 2,
+          "currency_code": "USD",
+          "price_nightly": "208",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAHA",
+          "search_rank": 3,
+          "currency_code": "USD",
+          "price_nightly": "0",
+          "availability": false
+        },
+        {
+          "hotel_code": "MIANI",
+          "search_rank": 4,
+          "currency_code": "USD",
+          "price_nightly": "178",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAWL",
+          "search_rank": 5,
+          "currency_code": "USD",
+          "price_nightly": "193",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAPA",
+          "search_rank": 6,
+          "currency_code": "USD",
+          "price_nightly": "164",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAAG",
+          "search_rank": 7,
+          "currency_code": "USD",
+          "price_nightly": "175",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIANW",
+          "search_rank": 8,
+          "currency_code": "USD",
+          "price_nightly": "123",
+          "availability": true
+        },
+        {
+          "hotel_code": "BRKBS",
+          "search_rank": 9,
+          "currency_code": "USD",
+          "price_nightly": "199",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIATS",
+          "search_rank": 10,
+          "currency_code": "USD",
+          "price_nightly": "137",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAWM",
+          "search_rank": 11,
+          "currency_code": "USD",
+          "price_nightly": "121",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIASS",
+          "search_rank": 12,
+          "currency_code": "USD",
+          "price_nightly": "0",
+          "availability": false
+        },
+        {
+          "hotel_code": "MIAEX",
+          "search_rank": 13,
+          "currency_code": "USD",
+          "price_nightly": "0",
+          "availability": false
+        },
+        {
+          "hotel_code": "MIAIA",
+          "search_rank": 14,
+          "currency_code": "USD",
+          "price_nightly": "132",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAVI",
+          "search_rank": 15,
+          "currency_code": "USD",
+          "price_nightly": "149",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAMB",
+          "search_rank": 16,
+          "currency_code": "USD",
+          "price_nightly": "151",
+          "availability": true
+        },
+        {
+          "hotel_code": "VGCCW",
+          "search_rank": 17,
+          "currency_code": "USD",
+          "price_nightly": "0",
+          "availability": false
+        },
+        {
+          "hotel_code": "MIALM",
+          "search_rank": 18,
+          "currency_code": "USD",
+          "price_nightly": "161",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAMD",
+          "search_rank": 19,
+          "currency_code": "USD",
+          "price_nightly": "260",
+          "availability": true
+        },
+        {
+          "hotel_code": "MIAHC",
+          "search_rank": 20,
+          "currency_code": "USD",
+          "price_nightly": "178",
+          "availability": true
+        }
+      ]
     },
-    "searchList": [
-      {
-        "price": 678,
-        "priceUSD": 678,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 583,
-        "priceUSD": 583,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 749,
-        "priceUSD": 749,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 644,
-        "priceUSD": 644,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 908,
-        "priceUSD": 908,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 778,
-        "priceUSD": 778,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1008,
-        "priceUSD": 1008,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 863,
-        "priceUSD": 863,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1195,
-        "priceUSD": 1195,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1023,
-        "priceUSD": 1023,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1345,
-        "priceUSD": 1345,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1151,
-        "priceUSD": 1151,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1625,
-        "priceUSD": 1625,
-        "srp": "LV0",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      },
-      {
-        "price": 1388,
-        "priceUSD": 1388,
-        "srp": "HPPAP2",
-        "propCode": "MIABMHF",
-        "currency": "USD"
-      }
-    ],
+
     "product": {
       "hotelCode": "ATLCP",
       "hotelName": "",
