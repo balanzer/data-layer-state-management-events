@@ -52,6 +52,28 @@ const marketingSlice = createSlice({
   },
 });
 
+const cartSlice = createSlice({
+  name: "cart",
+  initialState: {},
+  reducers: {
+    updateCart: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+
+const transactionSlice = createSlice({
+  name: "transaction",
+  initialState: {},
+  reducers: {
+    updateTransaction: (state: any, action) => {
+      const data: any = action.payload;
+      return data;
+    },
+  },
+});
+
 const userSlice = createSlice({
   name: "user",
   initialState: {},
@@ -115,6 +137,8 @@ export const { updateSearchInfo } = searchSlice.actions;
 export const { updateHotelInfo } = productSlice.actions;
 export const { updateRatesInfo } = ratesSlice.actions;
 export const { updateAppDataInfo } = appDataSlice.actions;
+export const { updateCart } = cartSlice.actions;
+export const { updateTransaction } = transactionSlice.actions;
 
 export const deviceReducer = deviceSlice.reducer;
 export const privacyReducer = privacySlice.reducer;
@@ -125,3 +149,5 @@ export const searchReducer = searchSlice.reducer;
 export const productReducer = productSlice.reducer;
 export const ratesReducer = ratesSlice.reducer;
 export const appDataReducer = appDataSlice.reducer;
+export const cartReducer = cartSlice.reducer;
+export const transactionReducer = transactionSlice.reducer;

@@ -15,6 +15,8 @@ import {
   updateHotelInfo,
   updateRatesInfo,
   updateAppDataInfo,
+  updateCart,
+  updateTransaction,
 } from "../store/slice/otherSlice";
 
 import store from "../store/store";
@@ -31,8 +33,10 @@ import userSample from "../data/samples/data/user-sample.json";
 import userAnonSample from "../data/samples/data/user-anon-sample.json";
 
 import searchDataSample from "../data/samples/data/search-sample.json";
-import hotelDataSample from "../data/samples/data/search-sample.json";
-import ratesDataSample from "../data/samples/data/search-sample.json";
+import hotelDataSample from "../data/samples/data/product-sample.json";
+import ratesDataSample from "../data/samples/data/rates-sample.json";
+import cartDataSample from "../data/samples/data/cart-sample.json";
+import confirmationDataSample from "../data/samples/data/confirmation-sample.json";
 import appDataSample from "../data/samples/data/app-data-sample.json";
 
 export class GenerateData {
@@ -74,11 +78,13 @@ function processSearchData() {
   store.dispatch(updateSearchInfo(searchDataSample.search));
 }
 function processProductData() {
-  store.dispatch(updateHotelInfo(hotelDataSample.search));
+  store.dispatch(updateHotelInfo(hotelDataSample.product));
 }
 function processRatesData() {
-  store.dispatch(updateHotelInfo(hotelDataSample.search));
-  store.dispatch(updateRatesInfo(ratesDataSample.search));
+  store.dispatch(updateHotelInfo(hotelDataSample.product));
+  store.dispatch(updateRatesInfo(ratesDataSample.roomRates));
+  store.dispatch(updateCart(cartDataSample.cart));
+  store.dispatch(updateTransaction(confirmationDataSample.transaction));
 }
 
 function processUserData() {

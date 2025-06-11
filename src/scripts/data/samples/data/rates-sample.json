@@ -1,0 +1,38 @@
+{
+  "roomRates": {
+    "selectionToggleView": "",
+    "rooms": [
+      {
+        "roomName": "2 Double Beds, Non-Smoking",
+        "roomCode": "NDD1",
+        "alertValue": "Only 2 rooms left!"
+      },
+      {
+        "roomName": "2 Queen Beds, Oversized Room, Non-Smoking",
+        "roomCode": "NQQ3",
+        "alertValue": "no alert message"
+      }
+    ],
+    "visibleRates": [
+      {
+        "rateName": "Standard Rate",
+        "ratePlan": "RROD"
+      }
+    ],
+    "hiddenRates": [
+      {
+        "rateName": "Hotel Special, 10% Off",
+        "ratePlan": "SPD4"
+      },
+      {
+        "rateName": "Pay Now & Save, Non-Refundable",
+        "ratePlan": "SSPB"
+      },
+
+      {
+        "rateName": "Family Breakfast Package",
+        "ratePlan": "PKFAM"
+      }
+    ]
+  }
+}

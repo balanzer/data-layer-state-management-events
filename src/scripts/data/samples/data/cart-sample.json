@@ -1,0 +1,8 @@
+{
+  "cart": {
+    "hotelCode": "atclp",
+    "hotelAddress": "123 Example St, City, Country",
+    "checkInDate": "2023-10-01",
+    "checkOutDate": "2023-10-05"
+  }
+}

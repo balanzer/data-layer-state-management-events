@@ -1,0 +1,15 @@
+{
+  "product": {
+    "hotelCode": "ATLCP",
+    "hotelName": "",
+    "hotelCity": "",
+    "hotelState": "",
+    "hotelCountry": "",
+    "hotelBrand": "",
+    "hotelChain": "",
+    "brand": {
+      "hotelBrand": "",
+      "hotelBrand4Digit": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "transaction": {
+    "confirmationNumber": "1234567890",
+    "bookingTotal": 250.0,
+    "currency": "USD",
+    "hotelDetails": {
+      "hotelName": "Miami Beach Resort",
+      "hotelCode": "MIARS",
+      "checkInDate": "2023-10-01",
+      "checkOutDate": "2023-10-05",
+      "roomType": "Ocean View Suite",
+      "numberOfNights": 4,
+      "numberOfGuests": 2
+    }
+  }
+}

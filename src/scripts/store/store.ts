@@ -13,6 +13,8 @@ import {
   productReducer,
   ratesReducer,
   appDataReducer,
+  cartReducer,
+  transactionReducer,
 } from "./slice/otherSlice";
 import userProfileReducer from "./slice/userProfile";
 import { DataAppEvents } from "../data/events/data-events";
@@ -36,6 +38,8 @@ const store = configureStore({
     search: searchReducer,
     product: productReducer,
     roomRates: ratesReducer,
+    cart: cartReducer,
+    transaction: transactionReducer,
     appData: appDataReducer,
   },
   devTools: true,
