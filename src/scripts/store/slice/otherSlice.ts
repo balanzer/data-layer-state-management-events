@@ -11,7 +11,6 @@ const deviceSlice = createSlice({
     updateDevice: (state: any, action) => {
       const data: any = action.payload;
       state = data;
-
       DataAppEvents.addDataEvent("device:update");
       return data;
     },
@@ -58,6 +57,7 @@ const cartSlice = createSlice({
   reducers: {
     updateCart: (state: any, action) => {
       const data: any = action.payload;
+      DataAppEvents.addDataEvent("cart:update");
       return data;
     },
   },
@@ -112,6 +112,7 @@ const ratesSlice = createSlice({
   reducers: {
     updateRatesInfo: (state: any, action) => {
       const data: any = action.payload;
+      DataAppEvents.addDataEvent("rates:update");
       return data;
     },
   },
